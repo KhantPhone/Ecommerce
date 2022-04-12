@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Playfair+Display&family=Poppins:wght@300&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+:root{
+	--text-color: #FF1616;
+	--bg-color: #FF1616;	
+}
+
+/*global classes*/
+
+.font-bar{
+	font-family: 'Barlow', sans-serif;
+}
+
+.font-play{
+	font-family: 'Playfair Display', serif;
+}
+
+.font-pop{
+	font-family: 'Poppins', sans-serif;
+}
+
+
+.font-14{
+	font-size: 14px;
+}
+
+.font-17{
+	font-size: 17px;
+}
+
+.font-20{
+	font-size: 20px;
+}
+
+.font-28{
+	font-size: 28px;
+}
+
+.font-34{
+	font-size: 34px;
+}
+
+.font-40{
+	font-size:40px;
+}
+
+.font-50{
+	font-size: 50px;
+}
+
+.text-fav{
+	color: var(--text-color);
+}
+
+.bg-fav{
+	background-color: var(--bg-color);
+}
+
+/*nav*/
+
+nav{	
+	overflow: hidden;	
+	box-shadow: 0 1px 15px 0 rgba(0,0,25,0.2);
+}
+
+.navbar-toggler{	
+	display: contents;	
+}
+
+.navbar-toggler:hover{
+	color: var(--text-color)!important;
+}
+
+.nav-link{
+	margin-left: 30px;
+}
+
+.nav-link:hover{
+	color: 
+}
+
+nav .active{
+	color : var(--text-color)!important;
+}
+
+nav i:hover {	
+	cursor: pointer;
+	color: var(--text-color);
+	transition: .4s;
+}
+
+nav i{
+	font-size: 20px!important;
+	color: #000;
+}
+
+nav .shopping-icons .nav-link{
+	margin-left: 0px!important;
+}
+
+
+
+@media screen and (max-width: 768px){
+
+	.nav-link{
+		margin-left:0px;
+	}
+
+	}
+
+
+/*to-top*/
+
+.to-top{
+	position: fixed;
+	bottom: 16px;
+	right: 18px;
+	cursor: pointer;
+	pointer-events: none;
+	opacity: 0;
+	z-index:1;
+	transition: all .4s;
+	background: red;	
+}
+
+.button-to-top button{	 
+	 background: none;
+	 border:none;
+	 outline: none;	 
+}
+
+.button-to-top span{
+	background: var(--bg-color);
+	color: #FFF;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+	transition: 0.5s ease;
+}
+
+.button-to-top span:hover{
+	box-shadow: 0 1px 15px 0 rgba(0,0,25,0.2); 
+	transform: translateY(-3px);
+}
+
+ .to-top:focus{
+	 background: none;
+	 border:none;
+	 outline: none;
+}
+
+.to-top.active{
+	bottom: 32px;
+	pointer-events: auto;
+	opacity: 1;
+
+}
+
+@media screen and (max-width: 768px){
+	.to-top{
+	position: fixed;
+	bottom: 16px;
+	right: 14px;
+	cursor: pointer;
+	pointer-events: none;
+	opacity: 0;
+	z-index:1;
+	transition: all .4s;
+	border-radius: 5px;
+	font-size: 30px;
+	}
+}
+
+/*home*/
+
+#home .home-info{
+	margin-top: 10rem;
+}
+
+#home .home-image{
+	margin-top: 6rem;
+}
+
+#home a{
+	color: #000	;
+	text-decoration: none;
+	transition: 0.5s ease;
+}
+
+#home a:hover{
+	color: var(--text-color);
+	transform: translateY(-20px);
+
+
+}
+
+#home button{
+	background: var(--bg-color);
+	color: #FFF;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+	outline: none;
+	border: none;
+	box-shadow: 0 1px 15px 0 rgba(0,0,25,0.2); 
+	transition: 0.5s ease;
+
+}
+
+#home button:hover{
+	border: var(--bg-color);
+	background: #fff;
+	box-shadow: 0 1px 15px 0 rgba(0,0,25,0.4); 
+	color: var(--text-color);
+	transform: translateY(-2px);
+
+}
+
+@media screen and (max-width: 768px){
+	#home .home-info{
+	margin-top: 3.9rem;
+	}
+
+	#home .home-image{
+		margin-top: 1rem;
+	}
+	#home .home-info-text{
+		font-size: 39px!important;
+	}
+}

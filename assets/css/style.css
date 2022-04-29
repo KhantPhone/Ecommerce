@@ -10,6 +10,10 @@
 	--bg-color: #FF1616;	
 }
 
+body{
+	background: #FBFBFB;
+	position: relative;
+}
 /*global classes*/
 
 .font-bar{
@@ -61,6 +65,9 @@
 	background-color: var(--bg-color);
 }
 
+.btn-fav{
+	background-color: var(--bg-color);
+}
 /*nav*/
 
 nav{	
@@ -80,12 +87,37 @@ nav{
 	margin-left: 30px;
 }
 
-.nav-link:hover{
-	color: 
+
+input[type="text"]{
+	
+	
 }
 
-nav .active{
-	color : var(--text-color)!important;
+nav button:hover{
+	transition: 0.5s ease;
+	background: #fff;
+	border: 1px solid var(--bg-color);
+	outline: #ffc;
+}
+
+i{
+
+	cursor: pointer;
+}
+
+i:hover{
+	color: var(--text-color);
+}
+
+.nav-link:hover{
+	transition: 0.5s ease;
+	color: var(--text-color)!important;
+}
+
+
+.nav-pills .nav-link.active{	
+     color: var(--text-color)!important;
+     background: none!important;
 }
 
 nav i:hover {	
@@ -205,8 +237,8 @@ nav .shopping-icons .nav-link{
 #home button{
 	background: var(--bg-color);
 	color: #FFF;
-	width: 38px;
-	height: 38px;
+	width: 40px;
+	height: 40px;
 	border-radius: 50%;
 	display: flex;
 	align-items: center;
@@ -218,9 +250,8 @@ nav .shopping-icons .nav-link{
 
 }
 
-#home button:hover{
-	border: var(--bg-color);
-	background: #fff;
+#home button:hover {
+	border: var(--bg-color);	
 	box-shadow: 0 1px 15px 0 rgba(0,0,25,0.4); 
 	color: var(--text-color);
 	transform: translateY(-2px);
@@ -233,9 +264,74 @@ nav .shopping-icons .nav-link{
 	}
 
 	#home .home-image{
-		margin-top: 1rem;
+		margin-top: 1.2rem;
 	}
 	#home .home-info-text{
 		font-size: 39px!important;
 	}
+	#home .d-flex{
+		margin-top: 1.3rem!important;
+	}
 }
+
+/*mixitup*/
+#new-arrivals li{
+	cursor: pointer;
+	list-style: none;
+	font-size: 17px;
+	
+}
+
+#new-arrivals li.mixitup-control-active{
+	color: var(--text-color);
+}
+
+#new-arrivals button{
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#new-arrivals button:hover{
+	background: none;
+	border: 1px solid var(--bg-color);
+}
+
+#new-arrivals button:hover #new-arrivals i{
+	width: 100px!important;
+}
+
+/*#new-arrivals .works-content{
+	background: #FFF;
+	border-radius: .5rem;
+	overflow: hidden;
+	margin-bottom: 2rem;
+	box-shadow: 0 4px 6px rgba(174, 190, 205, .3);
+}
+*/
+/*#new-arrivals .works-data{
+	padding: 2rem 1rem;
+}*/
+
+#new-arrivals img{
+	width: 250px;
+	height: 250px;
+	border-radius: 2%;
+	
+}
+
+#new-arrivals .works-content:hover img{
+	cursor: pointer;
+	transform: scale(1.02);
+	transition: .5s ease;
+	overflow: hidden;
+}
+/*
+#new-arrivals .works-content:hover{
+	box-shadow: 0 4px 6px rgba(174, 190, 205, .4);
+}
+*/

@@ -13,6 +13,7 @@
 body{
 	background: #FBFBFB;
 	position: relative;
+	overflow-x: hidden;
 }
 /*global classes*/
 
@@ -68,6 +69,28 @@ body{
 .btn-fav{
 	background-color: var(--bg-color);
 }
+
+/*preloader*/
+.content{
+	display: none;
+}
+
+.loader{	
+	height: 100vh;
+	width: 100vw;	
+	position: absolute;
+	background: #FBFBFB;
+}
+
+.loader lord-icon{	
+	position: fixed;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;	
+}
+
 /*nav*/
 
 nav{	
@@ -101,7 +124,6 @@ nav button:hover{
 }
 
 i{
-
 	cursor: pointer;
 }
 
@@ -212,6 +234,10 @@ nav .shopping-icons .nav-link{
 }
 
 /*home*/
+/*
+#home .landing{
+	height: 100vh;
+}*/
 
 #home .home-info{
 	margin-top: 10rem;
@@ -222,7 +248,7 @@ nav .shopping-icons .nav-link{
 }
 
 #home a{
-	color: #000	;
+	color: #000;
 	text-decoration: none;
 	transition: 0.5s ease;
 }
@@ -274,6 +300,14 @@ nav .shopping-icons .nav-link{
 	}
 }
 
+/*services*/
+#home .services{
+	margin-top: 7rem;
+	background-color:#FFFFFF;
+	padding: 1.7rem 1.7rem;
+	border-radius: 18px;
+	box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
+}
 /*mixitup*/
 #new-arrivals li{
 	cursor: pointer;
